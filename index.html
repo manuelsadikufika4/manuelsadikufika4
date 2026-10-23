@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manuel Sadi Kufika — Desenvolvedor Full Stack DevSecOps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#FFFFFF;--surface:#F3F4F8;--ink:#1B1F2A;--muted:#5B6270;--line:#DADDE5;
+  --red:#1A66E0;--gold:#7C3AED;--on-red:#FFFFFF;--link:#1558C9;
+  --display:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1117;--surface:#171B26;--ink:#F1F3F8;--muted:#A9B0C0;--line:#2B3142;--red:#5B9CFF;--gold:#A78BFA;--on-red:#0E1117;--link:#7DB0FF;}}
+:root[data-theme="dark"]{--bg:#0E1117;--surface:#171B26;--ink:#F1F3F8;--muted:#A9B0C0;--line:#2B3142;--red:#5B9CFF;--gold:#A78BFA;--on-red:#0E1117;--link:#7DB0FF}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--link)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.25rem 0;font-weight:500}
+header.top nav{display:flex;gap:1.25rem;flex-wrap:wrap}
+header.top a{color:var(--ink);text-decoration:none}
+header.top a:hover{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:6px}
+.hero{padding:clamp(2.5rem,8vw,6rem) 0 3rem}
+.hero h1{font:800 clamp(3rem,11vw,7.5rem)/.92 var(--display);letter-spacing:-.035em;margin:0 0 1.5rem}
+.stripe{display:flex;height:14px;max-width:22rem;margin:0 0 1.75rem}
+.stripe i{flex:1}.stripe i:nth-child(1){background:var(--red)}.stripe i:nth-child(2){background:#8A92A3}.stripe i:nth-child(3){background:var(--gold)}
+.role{font:500 clamp(1.25rem,3vw,1.75rem)/1.3 var(--display);margin:0 0 1rem}
+.quote{max-width:34rem;color:var(--muted);margin:0 0 2rem;font-size:1.125rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.3rem;font-weight:500;text-decoration:none;border:2px solid var(--ink);color:var(--ink);border-radius:2px}
+.btn.main{background:var(--red);border-color:var(--red);color:var(--on-red)}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font:800 clamp(1.75rem,4vw,2.5rem)/1.1 var(--display);letter-spacing:-.02em;margin:0 0 1.5rem}
+h3{font:500 1.25rem/1.3 var(--display);margin:0 0 .25rem}
+.about{max-width:42rem}
+.about p{margin:0 0 1rem}
+.stats{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.5rem;color:var(--muted)}
+.stats b{display:block;font:800 2rem/1 var(--display);color:var(--ink)}
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem}
+.proj{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--red);padding:1.25rem;display:flex;flex-direction:column;gap:.5rem;border-radius:2px}
+.proj.lead{grid-column:1/-1;border-left-color:var(--gold)}
+.proj p{margin:0;color:var(--muted);flex:1}
+.proj .meta{display:flex;justify-content:space-between;gap:.5rem;font-size:.9375rem}
+.tag{font-weight:500;background:var(--bg);padding:.1rem .6rem;border-radius:2px;border:1px solid var(--line)}
+.tl{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:3px solid var(--ink)}
+.tl li{position:relative;padding:0 0 2rem}
+.tl li::before{content:"";position:absolute;left:calc(-1.5rem - 8px);top:.5rem;width:13px;height:13px;background:var(--red);border:3px solid var(--bg);border-radius:50%}
+.tl .when{color:var(--muted);font-size:.9375rem;margin:0 0 .5rem}
+.tl ul{margin:.5rem 0 0;padding-left:1.1rem}
+.tl li li{padding:0 0 .25rem}.tl li li::before{display:none}
+.tl .org{margin:0;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none}
+.chips li{padding:.3rem .8rem;border:1.5px solid var(--ink);border-radius:2px;font-weight:500}
+.chips.soft li{border-color:var(--line);background:var(--surface)}
+dl{margin:0}dt{font-weight:500}dd{margin:0 0 .75rem;color:var(--muted)}
+.contact a{display:block;font:500 clamp(1.25rem,3.5vw,2rem)/1.5 var(--display);overflow-wrap:anywhere}
+footer{padding:2rem 0 3rem;color:var(--muted);border-top:1px solid var(--line);font-size:.9375rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span>Manuel Sadi Kufika</span>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#percurso">Percurso</a><a href="#competencias">Competências</a><a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Manuel Sadi Kufika</h1>
+      <div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="role">Desenvolvedor Full Stack DevSecOps Júnior</p>
+      <p class="quote">“A lógica de um programador não está na linguagem, mas na solução que ela cria.”</p>
+      <div class="btns">
+        <a class="btn main" href="#contacto">Fale comigo</a>
+        <a class="btn" href="https://github.com/manuelsadikufika4" target="_blank" rel="noopener">Ver GitHub</a>
+      </div>
+    </div>
+
+    <section id="sobre" class="about">
+      <h2>Sobre mim</h2>
+      <p>Sou finalista da 13.ª classe do curso de Informática de Gestão e construo software seguro e de qualidade. Domino a Programação Orientada a Objetos e trabalho com C#, Java, JavaScript, PHP e Python.</p>
+      <p>Integro fundamentos de Pentest e segurança desde a concepção do código. Trabalho bem em equipas multidisciplinares, com metodologias ágeis, bases de dados e depuração de problemas complexos.</p>
+      <div class="stats">
+        <span><b>14</b>repositórios no GitHub</span>
+        <span><b>5</b>linguagens de programação</span>
+        <span><b>2026</b>Co-CEO da Nzila Solutions</span>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="projects">
+        <article class="proj lead">
+          <h3>Nzila Solutions</h3>
+          <p>Startup que co-lidero desde junho de 2026. Defini o roadmap do produto, conduzo o desenvolvimento técnico do MVP e aplico segurança por design desde a primeira fase.</p>
+          <div class="meta"><span class="tag">Full Stack · DevSecOps</span><span>Startup</span></div>
+        </article>
+        <article class="proj">
+          <h3>SIGE — Turmas de Instituto</h3>
+          <p>Sistema de gerenciamento de turmas.</p>
+          <div class="meta"><span class="tag">PHP</span><a href="https://github.com/manuelsadikufika4/SIGE---TURMAS-DE-INSTITUTO-" target="_blank" rel="noopener">Código · 5 estrelas</a></div>
+        </article>
+        <article class="proj">
+          <h3>Agenda “Eu sou o melhor”</h3>
+          <p>Agenda pessoal, versão 1.1, distribuída como APK de depuração para uso próprio.</p>
+          <div class="meta"><span class="tag">HTML</span><a href="https://github.com/manuelsadikufika4/AgendaTHEBEST" target="_blank" rel="noopener">Código · 3 estrelas</a></div>
+        </article>
+        <article class="proj">
+          <h3>Projecto Abraham Lincoln</h3>
+          <p>Projeto web desenvolvido em HTML.</p>
+          <div class="meta"><span class="tag">HTML</span><a href="https://github.com/manuelsadikufika4/Projecto-Abraham-Lincoln-" target="_blank" rel="noopener">Código · 3 estrelas</a></div>
+        </article>
+        <article class="proj">
+          <h3>Projecto Rede Social</h3>
+          <p>Projeto de rede social publicado no GitHub.</p>
+          <div class="meta"><span class="tag">Web</span><a href="https://github.com/manuelsadikufika4/Projecto-Rede-social-" target="_blank" rel="noopener">Código · 3 estrelas</a></div>
+        </article>
+        <article class="proj">
+          <h3>DikuluKieto</h3>
+          <p>Projeto publicado no GitHub.</p>
+          <div class="meta"><span class="tag">Web</span><a href="https://github.com/manuelsadikufika4/DikuluKieto" target="_blank" rel="noopener">Código · 3 estrelas</a></div>
+        </article>
+      </div>
+      <p style="margin-top:1.5rem"><a href="https://github.com/manuelsadikufika4?tab=repositories" target="_blank" rel="noopener">Ver os 14 repositórios no GitHub</a></p>
+    </section>
+
+    <section id="percurso">
+      <h2>Percurso</h2>
+      <ol class="tl" reversed>
+        <li>
+          <h3>Co-CEO e Desenvolvedor Full Stack</h3>
+          <p class="org">Nzila Solutions (startup)</p>
+          <p class="when">Junho de 2026 – presente</p>
+          <ul>
+            <li>Estratégia de negócio e definição da visão e do roadmap do produto.</li>
+            <li>Liderança técnica do MVP com arquiteturas modernas.</li>
+            <li>Cultura DevSecOps desde o início, com análise básica de vulnerabilidades.</li>
+            <li>Metodologias ágeis na gestão de tarefas e objetivos.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Fundamentos de Pentest</h3>
+          <p class="org">CFPTEC</p>
+          <p class="when">19 de maio a 1 de junho de 2026</p>
+          <ul><li>Cibersegurança, ethical hacking, análise de vulnerabilidades e segurança ofensiva aplicada ao DevSecOps.</li></ul>
+        </li>
+        <li>
+          <h3>PHP e MySQL</h3>
+          <p class="org">Berfeli Tecnologia</p>
+          <p class="when">1 de maio a 1 de junho de 2025</p>
+          <ul><li>Backend com PHP orientado a objetos, MySQL, queries SQL, CRUDs e segurança básica em aplicações web.</li></ul>
+        </li>
+        <li>
+          <h3>Vice-Presidente</h3>
+          <p class="org">Nemaza Kaleki - RL (Ambiente e Resíduos Sólidos)</p>
+          <p class="when">1 de abril a 1 de agosto de 2025</p>
+          <ul>
+            <li>Decisões estratégicas com a administração local para o crescimento da cooperativa.</li>
+            <li>Coordenação de equipas multidisciplinares e operações de resíduos sólidos.</li>
+            <li>Gestão e otimização de processos internos.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Ensino Médio Técnico em Informática de Gestão</h3>
+          <p class="org">Instituto Politécnico de Administração e Gestão (IPAG)</p>
+          <p class="when">2023 – presente</p>
+          <ul><li>Ensino técnico profissional, lógica de programação e projetos académicos.</li></ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="competencias">
+      <h2>Competências</h2>
+      <div class="cols">
+        <div>
+          <h3>Linguagens</h3>
+          <ul class="chips"><li>C#</li><li>Java</li><li>JavaScript</li><li>PHP</li><li>Python</li></ul>
+        </div>
+        <div>
+          <h3>Áreas</h3>
+          <ul class="chips soft"><li>Aplicações web</li><li>Bases de dados</li><li>DevSecOps</li><li>Pentest</li><li>Metodologias ágeis</li><li>POO</li></ul>
+        </div>
+        <div>
+          <h3>Idiomas</h3>
+          <dl>
+            <dt>Português</dt><dd>Nativo</dd>
+            <dt>Inglês, Espanhol, Japonês, Kikongo</dt><dd>Noções básicas</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <p>Mbanza Kongo, Zaire, Angola. Aberto a oportunidades de estágio, projetos e parcerias.</p>
+      <a href="mailto:manuelsadikufika4@gmail.com">manuelsadikufika4@gmail.com</a>
+      <a href="tel:+244925936227">+244 925 936 227</a>
+      <a href="https://github.com/manuelsadikufika4" target="_blank" rel="noopener">github.com/manuelsadikufika4</a>
+      <a href="https://www.youtube.com/@manuelsadikufika4" target="_blank" rel="noopener">youtube.com/@manuelsadikufika4</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Manuel Sadi Kufika</footer>
+</div>
+</body>
+</html>
