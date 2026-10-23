@@ -21,7 +21,7 @@ Sou finalista da 13.ª classe do curso de **Informática de Gestão** (IPAG) e f
 
 - <img src="https://api.iconify.design/bi/shield-lock.svg?color=%231A66E0" width="18" height="18" alt="" align="absmiddle">Integro fundamentos de **Pentest** e segurança desde a concepção do código
 - <img src="https://api.iconify.design/bi/bricks.svg?color=%231A66E0" width="18" height="18" alt="" align="absmiddle">Domino **Programação Orientada a Objetos** em várias linguagens
-- <img src="https://api.iconify.design/bi/rocket-takeoff.svg?color=%231A66E0" width="18" height="18" alt="" align="absmiddle">**Co-CEO e Desenvolvedor Full Stack** na **Nzila Solutions** (startup), onde lidero o desenvolvimento técnico do MVP
+- <img src="https://api.iconify.design/bi/rocket-takeoff.svg?color=%231A66E0" width="18" height="18" alt="" align="absmiddle">**CEO e Desenvolvedor Full Stack** na **Nzila Solutions** (startup), onde lidero o desenvolvimento técnico do MVP
 - <img src="https://api.iconify.design/bi/people.svg?color=%231A66E0" width="18" height="18" alt="" align="absmiddle">Trabalho com **metodologias ágeis** em equipas multidisciplinares
 - <img src="https://api.iconify.design/bi/bug.svg?color=%231A66E0" width="18" height="18" alt="" align="absmiddle">Gosto de depurar e resolver problemas complexos de software
 
