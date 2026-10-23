@@ -46,11 +46,14 @@ Sou finalista da 13.ª classe do curso de **Informática de Gestão** (IPAG) e f
 
 | Projeto | Descrição | Tecnologia |
 |---|---|---|
+| [**日本語の道 · Nihongo Michi**](https://github.com/manuelsadikufika4/PROJECT-NIHONGO) | App Android para aprender japonês por níveis, com furigana, pronúncia e quizzes. Funciona offline | ![JavaScript](https://img.shields.io/badge/-JavaScript-7C3AED?logo=javascript&logoColor=white) ![Capacitor](https://img.shields.io/badge/-Capacitor-1A66E0?logo=capacitor&logoColor=white) |
 | [**SIGE – Turmas de Instituto**](https://github.com/manuelsadikufika4/SIGE---TURMAS-DE-INSTITUTO-) | Sistema de gerenciamento de turmas | ![PHP](https://img.shields.io/badge/-PHP-1A66E0?logo=php&logoColor=white) |
 | [**AgendaTHEBEST**](https://github.com/manuelsadikufika4/AgendaTHEBEST) | Agenda pessoal “Eu sou o melhor”, versão 1.1 | ![HTML](https://img.shields.io/badge/-HTML-7C3AED?logo=html5&logoColor=white) |
 | [**Projecto Abraham Lincoln**](https://github.com/manuelsadikufika4/Projecto-Abraham-Lincoln-) | Projeto web em HTML | ![HTML](https://img.shields.io/badge/-HTML-7C3AED?logo=html5&logoColor=white) |
 | [**Projecto Rede Social**](https://github.com/manuelsadikufika4/Projecto-Rede-social-) | Projeto de rede social | ![Web](https://img.shields.io/badge/-Web-4B5563) |
 | [**DikuluKieto**](https://github.com/manuelsadikufika4/DikuluKieto) | Projeto web | ![Web](https://img.shields.io/badge/-Web-4B5563) |
+
+Mais repositórios: [BANKAI](https://github.com/manuelsadikufika4/BANKAI) · [SADI-MIDDLE](https://github.com/manuelsadikufika4/SADI-MIDDLE) · [RegistoCivil](https://github.com/manuelsadikufika4/RegistoCivil)
 
 ---
 
