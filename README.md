@@ -78,7 +78,6 @@ Mais repositórios: [BANKAI](https://github.com/manuelsadikufika4/BANKAI) · [SA
 ## <img src="https://api.iconify.design/bi/envelope.svg?color=%231A66E0" width="26" height="26" alt="" align="absmiddle"> Contacto
 
 [![Email](https://img.shields.io/badge/Email-manuelsadikufika4@gmail.com-1A66E0?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manuelsadikufika4@gmail.com)
-[![YouTube](https://img.shields.io/badge/YouTube-@manuelsadikufika4-7C3AED?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@manuelsadikufika4)
 [![GitHub](https://img.shields.io/badge/GitHub-manuelsadikufika4-4B5563?style=for-the-badge&logo=github&logoColor=white)](https://github.com/manuelsadikufika4)
 
 <div align="center">
